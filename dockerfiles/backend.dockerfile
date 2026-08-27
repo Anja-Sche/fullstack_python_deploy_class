@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir uv
 # changes working directory to /app
 WORKDIR /app
 
-# installs all dependencies in pyproject.toml without dev paskages
+# installs all dependencies in pyproject.toml without dev packages
 RUN uv sync --no-dev
 
 # change working directory to where we have api.py
